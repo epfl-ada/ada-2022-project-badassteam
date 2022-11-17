@@ -1,4 +1,4 @@
-# ada-2022-project-badassteam\
+# ada-2022-project-badassteam
 
 Created by:\
 Antoine LAPERRIERE - 288734\
