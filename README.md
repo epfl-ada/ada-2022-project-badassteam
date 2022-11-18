@@ -2,7 +2,7 @@
 
 Created by:\
 Antoine LAPERRIERE - 288734\
-Benoit GAUDIOT - XXXXXX\
+Benoit GAUDIOT - 275223\
 Nathan PAILLOU - 287361\
 Romain BEZEAUD - 283622
 
@@ -25,9 +25,13 @@ In 1975, the filmmaker Laura Muley highlighted the underrepresentation of women 
 
 * **Freebase_ID <=> Q-wikidata ID**: The movies that were made in the US and that has a freebase_ID were extracted with a SPARQL query. This allows us to obtain a table with a row containing the freebase_ID and the other row with the corresponding Q-ID.
 
-* **Review score**: We think that the review score of a film is an interesting indicator for data analysis. For this, we search for the US movies that has a freebase_ID and a review score. Then, we also query the website from which the score was coming and the type of review. With the obtained data, we chose to keep two differents review score both from [Rotten Tomatoes](https://www.rottentomatoes.com): the tomatometer score and the average review score. The first one is based on press reviews (À VÉRIFIER) whereas the second is based on the website users.
+* **Review score**: We think that the review score of a film is an interesting indicator for data analysis. For this, we search for the US movies that has a freebase_ID and a review score. Then, we also query the website from which the score was coming and the type of review. With the obtained data, we chose to keep two differents review score both from [Rotten Tomatoes](https://www.rottentomatoes.com): the tomatometer score and the average review score. The first one is based on press reviews whereas the second is based on the website users.
 
 ## Google trends
+
+* **Interest by region**: The relative number of request for the name of the main actors dataset were extracted from Google Trends using the PYTRENDS API. In order to compare all the actors on the same basis and because of the limitations from Google Trens, an iterative process was applied in order to normalize each subset of 5 actors.
+
+* **Most common queries**: As we believe that the queries related to the actors might be interesting to assess how people percieve them, a first reaserch allowed us to gather queries related to "actor" and "actress". This could be used to extend the initial dataframe with the queries related to each movies' main actors.
 
 # Methods
 
@@ -79,7 +83,7 @@ The movie summary represents a great source of data for analyzing the representa
 
 For milestone 2:
 * Antoine : Querying data from Wikidata
-* Benoit : Queryring data from google trends
+* Benoit : Queryring data from Google Trends
 * Nathan : dataset exploration, analyzing movie summaries
 * Romain : dataset exploration, focus on the USA
 
