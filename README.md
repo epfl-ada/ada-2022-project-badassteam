@@ -13,7 +13,7 @@ Romain BEZEAUD - 283622
 
 # Abstract
 
-In 1975, the filmmaker Laura Muley highlighted the underrepresentation of women in film industry and more broadly in visual culture. She introduced the term "male gaze" and allow people to question the place of women in the cinema industry. The American cinema industry played a strong role of influence on the western society and appears as a good area of study to examine how women's representation has changed over the period of nearly a century. Two research axes could be used to examine this issue. It would be interesting to first examine the underlying distinctions between men and women's presence in a movie. Specifically, to investigate the ages of the actors and actresses as well as the roles' percentage of occupations. Then, we will explore the representation of women in front of the camera. In fact, by examining the roles they play, one might gain an understanding of how the director stages them. 
+In 1975, the filmmaker Laura Muley highlighted the underrepresentation of women in film industry and more broadly in visual culture. She introduced the term "male gaze" and allow people to question the place of women in the cinema industry. The American cinema industry played a strong role on the western society and appears as a good area of study to examine how women's representation has changed over the period of nearly a century. It would be interesting to first examine the underlying distinctions between men and women's presence in a movie. Specifically, to investigate the ages of the actors and actresses as well as the roles' percentage of occupations. Then, we will explore the representation of women in front of the camera. In fact, by examining the roles they play, one might gain an understanding of how the director stages them. 
 
 # Research questions
 
@@ -35,7 +35,7 @@ In 1975, the filmmaker Laura Muley highlighted the underrepresentation of women 
 
 # Methods
 
-### External libraries
+### Libraries
 * empath
 * country_converter
 * wikidata2df
@@ -44,8 +44,8 @@ In 1975, the filmmaker Laura Muley highlighted the underrepresentation of women 
 
 ## Dataset
 ### *-Movie metadata dataset*
-As we chose to analyze only the US cinema industry, the first step was to exclude all the non-US movies. Then, we decided to import the available review_score from wikidata. To do so, we create a mapping dataset where each row contains the freebase_ID, the wikidata_ID, the review score and the origin of the review score.\
-After opening the dataset, data exploration has been performed. It has been clear that the USA is by far the country that produces the highest amount of movies. So the focus is done exlusively on the US movie industry.
+To analyze only the US cinema industry, the first step was to exclude all the non-US movies. Then, we decided to import the available review_score from wikidata. To do so, we create a mapping dataset where each row contains the freebase_ID, the wikidata_ID, the review score and the origin of the review score.\
+After opening the dataset, data exploration has been performed. USA is, by far, the country that produces the highest amount of movies. So the focus is done exlusively on the US movie industry.
 
 ### *-Character metadata dataset*
 After exploring the dataset, we noticed that some informations were missing or wrong. Some Actor_gender were wrong and the ethnicity columns had just a freebase_Id but not any label. Missing values have been collected from wikidata and implemented in the dataset. The actor age at release has also been corrected, in some cases it was negative or very big whch is not feasible. This outlier values have been replaced by the opposite for the negative ones and by NaN for the big ones. Finally the dataset is filtered with only US movies.
