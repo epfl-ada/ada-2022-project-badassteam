@@ -24,15 +24,13 @@ In 1975, the filmmaker Laura Muley highlighted the underrepresentation of women 
 
 * **Most common queries**: As we believe that the queries related to the actors might be interesting to assess how people percieve them, a first reaserch allowed us to gather queries related to "actor" and "actress". This could be used to extend the initial dataframe with the queries related to each movies' main actors.
 
+<p align="center">
+  <img src="img/output.png" width="600"/>
+</p>
+<p align="center">
+  <img src="img/output2.png" width="600"/>
+</p>
 
-<img
-  src="img/output.png"
-  style="display: inline-block; margin: auto auto; max-width: 500px">
-  <img
-  src="img/output2.png"
-  alt="Alt text"
-  title="Optional title"
-  style="display: inline-block; margin: auto auto; max-width: 500px">
 
 # Methods
 
@@ -50,7 +48,9 @@ In 1975, the filmmaker Laura Muley highlighted the underrepresentation of women 
 To analyze only the US cinema industry, the first step was to exclude all the non-US movies. Then, we decided to import the available review_score from wikidata. To do so, we create a mapping dataset where each row contains the freebase_ID, the wikidata_ID, the review score and the origin of the review score.\
 After opening the dataset, data exploration has been performed. USA is, by far, the country that produces the highest amount of movies.
 
-![alt text](img/world_map.png?raw=true)
+<p align="center">
+  <img src="img/world_map.png" width="600"/>
+</p>
 
 ### *-Character metadata dataset*
 After exploring the dataset, we noticed that some informations were missing or wrong. Some Actor_gender were wrong and the ethnicity columns had just a freebase_Id but not any label. Missing values have been collected from wikidata and implemented in the dataset. The actor age at release has also been corrected, in some cases it was negative. This outlier values have been replaced by the opposite for the negative ones and by NaN for the big ones. Finally the dataset is filtered with only US movies.
