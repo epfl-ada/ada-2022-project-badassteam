@@ -23,7 +23,7 @@ In 1975, the filmmaker Laura Muley highlighted the underrepresentation of women 
 ## Wikidata
 
 
-* **Freebase_ID <=> Q-wikidata ID**: The movies that were made in the US and that has a freebase_ID were extracted with a SPARQL query. This allows us to obtain a table with a row containing the freebase_ID and the other row with the corresponding Q-ID.
+* **Freebase_ID <=> Q-wikidata ID**: USmovies and movies with a freebase_ID were extracted with a SPARQL query. This allows us to obtain a table with a row containing the freebase_ID and the other row with the corresponding Q-ID.
 
 * **Review score**: Review score of a film may been an interesting indicator for data analysis. For this, we search for the US movies that has a freebase_ID and a review score. Then, we also query the website from which the score was coming and the type of review. We chose to keep two differents review score both from [Rotten Tomatoes](https://www.rottentomatoes.com): the tomatometer score and the average review score. The first one is based on press reviews whereas the second is based on the website users.
 
@@ -51,13 +51,13 @@ After opening the dataset, data exploration has been performed. USA is, by far, 
 After exploring the dataset, we noticed that some informations were missing or wrong. Some Actor_gender were wrong and the ethnicity columns had just a freebase_Id but not any label. Missing values have been collected from wikidata and implemented in the dataset. The actor age at release has also been corrected, in some cases it was negative or very big whch is not feasible. This outlier values have been replaced by the opposite for the negative ones and by NaN for the big ones. Finally the dataset is filtered with only US movies.
 
 ### *-Movie summary dataset*
-The movie summary represents a great source of data for analyzing the representation of woman in the cinema industry. It has been decided to perform a pronoun analysis on each summary. the pronoun are separated in two categories: male and female. The occurence of each pronoun is counted and added into a dataframe. The principal and secondary characters are also extracted from the summaries. The occurence of the character's name are counted and the most frequent one is considered to be the principal character. The next step is to identify if the actor behind the character is a male or a female and to extract his name.
+Movie summary dataset represents a great source of data for analyzing the representation of woman in the cinema industry. It has been decided to perform a pronoun analysis on each summary. The pronoun are separated in two categories: male and female. The occurence of each pronoun is counted and added into a dataframe. The principal and secondary characters are also extracted from the summaries. The occurence of the character's name are counted and the most frequent one is considered to be the principal character. The next step is to identify if the actor behind the character is a male or a female and to extract his name.
 
 
 ## Initial analyses
 
 ### *-Difference between men and women's place*
- **Step 1**: Investigate the part (in percentage) of women in movies across decades: 
+ **Step 1**: Investigate the part of women in movies across decades: 
 * Evaluation of the mean and standard deviation of percentage of women in each decade
 * Linear regression to see the parameters to see the parameters influencing the women part\
 
@@ -84,8 +84,8 @@ The movie summary represents a great source of data for analyzing the representa
 For milestone 2:
 * Antoine : Querying data from Wikidata
 * Benoit : Queryring data from Google Trends
-* Nathan : dataset exploration, analyzing movie summaries
-* Romain : dataset exploration, focus on the USA
+* Nathan : Dataset exploration, analyzing movie summaries
+* Romain : Dataset exploration, focus on the USA
 
 For milestone 3:
 * Antoine : Complete final data visualisation 
