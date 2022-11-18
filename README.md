@@ -1,13 +1,4 @@
-# **ada-2022-project-badassteam**
-
-Created by:\
-Antoine LAPERRIERE - 288734\
-Benoit GAUDIOT - 275223\
-Nathan PAILLOU - 287361\
-Romain BEZEAUD - 283622
-
-
-# *Hollywood: a reflection of a patriarchal society?*
+# Hollywood: a reflection of a patriarchal society ?
 
  ___Study of the evolution of the representation of women in the american cinema industry from 1888 to 2012___
 
@@ -33,6 +24,16 @@ In 1975, the filmmaker Laura Muley highlighted the underrepresentation of women 
 
 * **Most common queries**: As we believe that the queries related to the actors might be interesting to assess how people percieve them, a first reaserch allowed us to gather queries related to "actor" and "actress". This could be used to extend the initial dataframe with the queries related to each movies' main actors.
 
+
+<img
+  src="img/output.png"
+  style="display: inline-block; margin: auto auto; max-width: 500px">
+  <img
+  src="img/output2.png"
+  alt="Alt text"
+  title="Optional title"
+  style="display: inline-block; margin: auto auto; max-width: 500px">
+
 # Methods
 
 ### Libraries
@@ -41,11 +42,15 @@ In 1975, the filmmaker Laura Muley highlighted the underrepresentation of women 
 * wikidata2df
 * plotly
 * lxml
+* pytrends
+* wordcloud
 
 ## Dataset
 ### *-Movie metadata dataset*
 To analyze only the US cinema industry, the first step was to exclude all the non-US movies. Then, we decided to import the available review_score from wikidata. To do so, we create a mapping dataset where each row contains the freebase_ID, the wikidata_ID, the review score and the origin of the review score.\
 After opening the dataset, data exploration has been performed. USA is, by far, the country that produces the highest amount of movies.
+
+![alt text](img/world_map.png?raw=true)
 
 ### *-Character metadata dataset*
 After exploring the dataset, we noticed that some informations were missing or wrong. Some Actor_gender were wrong and the ethnicity columns had just a freebase_Id but not any label. Missing values have been collected from wikidata and implemented in the dataset. The actor age at release has also been corrected, in some cases it was negative. This outlier values have been replaced by the opposite for the negative ones and by NaN for the big ones. Finally the dataset is filtered with only US movies.
@@ -73,9 +78,9 @@ Movie summary dataset represents a great source of data for analyzing the repres
 # Proposed timeline
 
 * **02.12.22: Homework 2 deadline**
-* 05.12.22 : complete code , extract important features
-* 10.12.22 : critic and select reliable results  
-* 16.12.22 : appropriate data visualization
+* 05.12.22 : data analysis, extract important features
+* 10.12.22 : critic and select reliable results
+* 16.12.22 : complete code, appropriate data visualization
 * 20.12.22 : complete datastory
 * **23.12.22 : Milestone 3 deadline**
 
@@ -88,7 +93,7 @@ For milestone 2:
 * Romain : Dataset exploration, focus on the USA
 
 For milestone 3:
-* Antoine : Complete final data visualisation 
-* Benoit : Complete trends and website
+* Antoine : correlation research, complete final data visualisation
+* Benoit : Statistical analysis, complete trends and website
 * Nathan : Push on lexical analysis combine with trends
-* Romain : Datastory and website
+* Romain : Datastory, interactive data visualization and website
