@@ -27,12 +27,12 @@ In 1975, the filmmaker Laura Muley highlighted the underrepresentation of women 
 
 <img
   src="img/output.png"
-  style="display: inline-block; margin: auto auto; max-width: 500px">
+  style="display: inline-block; margin: auto auto; max-width: 300px">
   <img
   src="img/output2.png"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: auto auto; max-width: 500px">
+  style="display: inline-block; margin: auto auto; max-width: 300px">
 
 # Methods
 
