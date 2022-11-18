@@ -88,7 +88,7 @@ For milestone 2:
 * Romain : dataset exploration, focus on the USA
 
 For milestone 3:
-* Antoine :
-* Benoit :
-* Nathan :
-* Romain :
+* Antoine : Complete final data visualisation 
+* Benoit : Complete trends and website
+* Nathan : Push on lexical analysis combine with trends
+* Romain : Datastory and website
