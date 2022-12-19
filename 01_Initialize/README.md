@@ -20,7 +20,7 @@
 - Install the NLP model `python -m spacy download en_core_web_lg`
 - Install `coreferee` in english with `python -m coreferee install en`
 
-## Add/remove dependencies
+## Add/remove dependencies (if needed)
 
 - edit the relevant requirement files (.in)
 - compile the files
