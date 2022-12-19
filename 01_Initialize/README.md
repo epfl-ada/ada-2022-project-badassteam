@@ -13,7 +13,7 @@
 - Activate virtual environment `conda activate ADA_3.10`
 - install pip-tools `pip install pip-tools`
 
-## Install dev dependencies
+## Install dependencies to set environment
 
 - To use the script `pip-sync requirements.txt`
 
