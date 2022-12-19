@@ -16,9 +16,9 @@
 ## Install dependencies to set environment
 
 - Install all the predifined libraries `pip-sync requirements.txt`
-- Install the NLP model 'python -m spacy download en_core_web_sm'
-- Install the NLP model 'python -m spacy download en_core_web_lg'
-- Install 'coreferee' in english with 'python -m coreferee install en'
+- Install the NLP model `python -m spacy download en_core_web_sm`
+- Install the NLP model `python -m spacy download en_core_web_lg`
+- Install `coreferee` in english with `python -m coreferee install en`
 
 ## Add/remove dependencies
 
