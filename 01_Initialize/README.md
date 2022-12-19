@@ -9,13 +9,16 @@
 - Open a Command line or a terminal on VSC
 - Create a folder in which you want to have the project files
 - Clone the repository "git clone https://github.com/epfl-ada/ada-2022-project-badassteam"
-- Create a virtual environment for this code `conda create -n "ADA_3.10 python=3.10.8`
+- Create a virtual environment for this code `conda create --prefix ADA_3.10 python=3.10`
 - Activate virtual environment `conda activate ADA_3.10`
 - install pip-tools `pip install pip-tools`
 
 ## Install dependencies to set environment
 
-- To use the script `pip-sync requirements.txt`
+- Install all the predifined libraries `pip-sync requirements.txt`
+- Install the NLP model 'python -m spacy download en_core_web_sm'
+- Install the NLP model 'python -m spacy download en_core_web_lg'
+- Install 'coreferee' in english with 'python -m coreferee install en'
 
 ## Add/remove dependencies
 
