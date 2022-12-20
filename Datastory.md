@@ -46,7 +46,7 @@ Country                      |	code |	Number_of_movie |	Percent | Number of act 
 
 
 
-![image](/output/GenreByDecade.png){: width="500" }
+![image](/output/GenreByDecade.png){: .center-image; width="500" }
 
 ## Summary analysis (point of view real)
 ### how to extract character from summary
