@@ -42,23 +42,32 @@ Country                      |	code |	Number_of_movie |	Percent | Number of act 
 {% include world_map.html %}
 
 
-![image](/output/MovieByDecade.png){:style="display:block; width="800"; margin-left:auto; margin-right:auto"}
+![image](/output/MovieByDecade.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 
 
-![image](/output/GenreByDecade.png){:.centered ; width="500" }
+![image](/output/GenreByDecade.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
-## Summary analysis (point of view real)
+## What can a director's point of view reveal in a summary ?
+
+The study aims to examine the evolution of female characters as depicted by movie directors. One way to do this is by analyzing summaries of films, as they often contain information about characters and their attributes. This can provide insight into how women have been portrayed and represented in films over time, and how this has changed or evolved. It is important to approach this analysis objectively and consider multiple perspectives, rather than relying on personal opinions or biases.
+
 ### how to extract character from summary
+To begin we extract all the characters from summaries thanks to a Machine Learning algorithm which leaks all pronoms to their related name. With this, we found a list of character by movie. We rank them and find the main character. 
+
+{% include Charac_ranking.html %}
 ### repartion of character per decade
+{% include Charac_decade.html %}
 ### repartition of character per genre
+{% include Genre_decade.html %}
+
 
 ## Analysis diference man woman thks to summary
 
-![image](/output/MF_Adjective_decade.png){: width="450" }
-![image](/output/MF_Verb_decade.png){: width="450" }
+![image](/output/MF_Adjective_decade.png){:style="display:block; margin-left:auto; margin-right:auto"}
+![image](/output/MF_Verb_decade.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
-![image](/output/Adj_frequency.png){: width="450" }
+![image](/output/Adj_frequency.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 
 ## Comparison to public sentiment 
