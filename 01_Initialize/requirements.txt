@@ -6,6 +6,8 @@
 #
 asttokens==2.2.1
     # via stack-data
+attrs==22.2.0
+    # via jsonschema
 backcall==0.2.0
     # via ipython
 blis==0.7.9
@@ -55,6 +57,8 @@ entrypoints==0.4
     # via jupyter-client
 executing==1.2.0
     # via stack-data
+fastjsonschema==2.16.2
+    # via nbformat
 fonttools==4.38.0
     # via matplotlib
 fuzzywuzzy==0.18.0
@@ -69,14 +73,20 @@ jedi==0.18.2
     # via ipython
 jinja2==3.1.2
     # via spacy
+jsonschema==4.17.3
+    # via nbformat
 jupyter-client==7.4.8
     # via ipykernel
 jupyter-core==5.1.0
-    # via jupyter-client
+    # via
+    #   jupyter-client
+    #   nbformat
 kiwisolver==1.4.4
     # via matplotlib
 langcodes==3.3.0
     # via spacy
+levenshtein==0.20.8
+    # via python-levenshtein
 lxml==4.9.2
     # via -r requirements.in
 markupsafe==2.1.1
@@ -95,6 +105,8 @@ murmurhash==1.0.9
     #   preshed
     #   spacy
     #   thinc
+nbformat==5.7.1
+    # via -r requirements.in
 nest-asyncio==1.5.6
     # via
     #   ipykernel
@@ -162,12 +174,16 @@ pygments==2.13.0
     # via ipython
 pyparsing==3.0.9
     # via matplotlib
+pyrsistent==0.19.2
+    # via jsonschema
 python-dateutil==2.8.2
     # via
     #   dateparser
     #   jupyter-client
     #   matplotlib
     #   pandas
+python-levenshtein==0.20.8
+    # via -r requirements.in
 pytz==2022.6
     # via
     #   dateparser
@@ -180,6 +196,8 @@ pyzmq==24.0.1
     # via
     #   ipykernel
     #   jupyter-client
+rapidfuzz==2.13.7
+    # via levenshtein
 regex==2022.10.31
     # via dateparser
 requests==2.28.1
@@ -233,6 +251,7 @@ traitlets==5.7.1
     #   jupyter-client
     #   jupyter-core
     #   matplotlib-inline
+    #   nbformat
 typer==0.7.0
     # via
     #   pathy
