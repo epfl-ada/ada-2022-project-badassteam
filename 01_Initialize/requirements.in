@@ -19,3 +19,4 @@ fuzzywuzzy
 python-Levenshtein
 nbformat>=4.2.0
 kaleido
+wikidata2df
