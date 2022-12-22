@@ -141,6 +141,7 @@ pandas==1.5.2
     #   country-converter
     #   seaborn
     #   statsmodels
+    #   wikidata2df
 parso==0.8.3
     # via jedi
 pathy==0.10.1
@@ -206,6 +207,7 @@ requests==2.28.1
     # via
     #   empath
     #   spacy
+    #   wikidata2df
 scipy==1.9.3
     # via statsmodels
 seaborn==0.12.1
@@ -274,6 +276,8 @@ wasabi==0.10.1
     #   thinc
 wcwidth==0.2.5
     # via prompt-toolkit
+wikidata2df==0.1.0
+    # via -r requirements.in
 wincertstore==0.2
     # via -r requirements.in
 wordcloud==1.8.2.2
