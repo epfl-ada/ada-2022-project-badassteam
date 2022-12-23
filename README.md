@@ -34,10 +34,11 @@ From the data handling we wanted to go deeper on the male/female analysis. So we
 
 ![](./plot/world_map.html)<!--- Weighting decade and genre--->
 
-
 ### Summaries analysis 
+From all the words extract thank to the NLP, we proceed a normalization by lexical fields (over 190). We compute a scores based on the words frequencies. In order to compare description of character, we take the invers intersection of the lexical field. With this we wonder if it is possible to preddict if the character is male or female based on the description. So we do a random forest and a PCA on adjectives and verbs.
 
 ### Review analysis
+Finally we want to understand the public point of view by analysis the review score of movie buy genre and decade. To proceed, we decide to do a separation in the dataset at 1970 and to a linear regression between the two subsets. With this, we can analize in the public sentiment will change for female character or not.
 
 ## bADAssteam members contribution
 * Antoine : Correlation research, complete final data visualisation
