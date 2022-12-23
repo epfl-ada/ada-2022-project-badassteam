@@ -96,7 +96,7 @@ Pipeline schema
 
 ### Step 8: Creation of the data story and build of the website
 
-* 
+* The web site was develop thanks to a jekyll librairies call cayman. All the plot are extracted from the notebook P3_final.
                                                     
 
 
