@@ -1,16 +1,72 @@
 # Hollywood: a reflection of a patriarchal society ?
 
- ___Study of the evolution of the representation of women in the american cinema industry from 1888 to 2012___
+___Study of the evolution of the representation of women in the american cinema industry from 1888 to 2012___
 
-# Abstract
+## Abstract
+The term “male gaze,” introduced by filmmaker Laura Mulvey in 1975, refers to the way in which the visual arts, particularly film, depict the world and women from a masculine point of view. This perspective is often characterized by an objectifying and sexualizing portrayal of women, which reinforces traditional gender roles and reinforces the dominant power dynamics between men and women. Mulvey’s concept of the male gaze has been influential in feminist film theory and has sparked important discussions about the representation of women in the film industry and broader visual culture.
+
+The study of the representation of women in film is an important area of inquiry because of the significant role that the film industry plays in shaping cultural norms and values. By examining how women have been portrayed in film over the past century, we can better understand the changing attitudes towards gender and representation in society. This can be done by looking at both the perspective of the director, who plays a key role in shaping the representation of women on screen, as well as the perspective of the audience, who consume and are influenced by these representations. Through this analysis, it is possible to better understand the ways in which the film industry has influenced and been influenced by societal attitudes towards women, and to consider the potential for positive change in the representation of women in film and visual culture.
+
+## Research questions
+* <i><strong>How has the consideration of both directors' and audiences' perspectives impacted the evolution of gender bias in the portrayal characters in film? </strong></i>
+
+## Website
+To access the website please clic [here](https://badasteam.github.io/US_Cinema/Datastory)!
+
+## Methods
+
+### Pincipals Externals libraries
+* empath
+* country_converter
+* wikidata2df
+* plotly
+* lxml
+* wordcloud
+* statsmodel
+* sklearn
+* tqdm
+
+### Data handling
+First step in the analysis is to set the scoop of the dataset on USA movies. Remove all other countries from character, movie and summaries dataset. In addition, we analyze character gender by country to confirm the previous point. To continue the preliminary processing, we make an analysis to complete our dataset for missing value in gender and ethnicity. Moreover, for a futher study on public sentiment, we gather review scores from Wikidata. And finally, we perform an NLP program on summaries to extract mains characters as well as adjectives and verbs that describes them.
+
+### Preliminary analysis
+From the data handling we wanted to go deeper on the male/female analysis. So we look at the weighting of male/female character per decade and then per genre. 
+
+![](./plot/world_map.html)<!--- Weighting decade and genre--->
+
+### Summaries analysis 
+From all the words extract thank to the NLP, we proceed a normalization by lexical fields (over 190). We compute a scores based on the words frequencies. In order to compare description of character, we take the invers intersection of the lexical field. With this we wonder if it is possible to preddict if the character is male or female based on the description. So we do a random forest and a PCA on adjectives and verbs.
+
+### Review analysis
+Finally we want to understand the public point of view by analysis the review score of movie buy genre and decade. To proceed, we decide to do a separation in the dataset at 1970 and to a linear regression between the two subsets. With this, we can analize in the public sentiment will change for female character or not.
+
+## bADAssteam members contribution
+* Antoine : Correlation research, complete final data visualisation
+* Benoit : Summaries exploration: ML algorithm and NLP
+* Nathan : Summaries analysis: Random forest and PCA
+* Romain : Datastory, interactive data visualization and website
+
+
+<!---
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ANCIEN README
+
+
+
+___Study of the evolution of the representation of women in the american cinema industry from 1888 to 2012___
+
+## Abstract
 
 In 1975, the filmmaker Laura Muley highlighted the underrepresentation of women in film industry and more broadly in visual culture. She introduced the term "male gaze" and allow people to question the place of women in the cinema industry. The American cinema industry played a strong role on the western society and appears as a good area of study to examine how women's representation has changed over the period of nearly a century. It would be interesting to first examine the underlying distinctions between men and women's presence in a movie. Specifically, to investigate the ages of the actors and actresses as well as the roles' percentage of occupations. Then, we will explore the representation of women in front of the camera. In fact, by examining the roles they play, one might gain an understanding of how the director stages them. 
 
-# Research questions
+## Research questions
 
-* How has the women places evolves in the US cinema industry ? Does the cinema represent more men than women and has there been a change over the years ? Has the role played by woman and the attributes of their characters evolves through the year ? And finally how the place of actresses evolve for the public ?
+* <i><strong>How has the consideration of both directors' and audiences' perspectives impacted the evolution of gender bias in the portrayal characters in film? </strong></i>
 
-# Proposed additional datasets
+## Proposed additional datasets
 ## Wikidata
 
 
@@ -97,3 +153,4 @@ For milestone 3:
 * Benoit : Statistical analysis, complete trends and website
 * Nathan : Push on lexical analysis combine with trends
 * Romain : Datastory, interactive data visualization and website
+--->
