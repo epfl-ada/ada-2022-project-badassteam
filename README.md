@@ -47,6 +47,86 @@ Finally we want to understand the public point of view by analysis the review sc
 * Romain : Datastory, interactive data visualization and website
 
 
+# Hollywood: a reflection of a patriarchal society ?
+
+ ___Study of the evolution of the representation of women in the american cinema industry from 1888 to 2012___
+
+
+# Data story
+
+The data story is accessible following this *[link](https://badasteam.github.io/US_Cinema/Datastory)*.
+
+
+# Abstract
+
+In 1975, the filmmaker Laura Muley highlighted the underrepresentation of women in film industry and more broadly in visual culture. She introduced the term "male gaze" and allow people to question the place of women in the cinema industry. The American cinema industry played a strong role on the western society and appears as a good area of study to examine how women's representation has changed over the period of nearly a century. It would be interesting to first examine the underlying distinctions between men and women's presence in a movie. Specifically, to investigate the ages of the actors and actresses as well as the roles' percentage of occupations. Then, we will explore the representation of women in front of the camera. In fact, by examining the roles they play, one might gain an understanding of how the director stages them. 
+
+# Research questions
+
+* How has the women places evolves in the US cinema industry ? Does the cinema represent more men than women and has there been a change over the years ? Has the role played by woman and the attributes of their characters evolves through the year ? And finally how the place of actresses evolve for the public ?
+
+# Proposed additional datasets
+## Wikidata
+
+
+* **Freebase_ID <=> Q-wikidata ID**: USmovies and movies with a freebase_ID were extracted with a SPARQL query. This allows us to obtain a table with a row containing the freebase_ID and the other row with the corresponding Q-ID.
+
+* **Review score**: Review score of a film may been an interesting indicator for data analysis. For this, we search for the US movies that has a freebase_ID and a review score. Then, we also query the website from which the score was coming and the type of review. We chose to keep two differents review score both from [Rotten Tomatoes](https://www.rottentomatoes.com): the tomatometer score and the average review score. The first one is based on press reviews whereas the second is based on the website users.
+
+# Methods
+
+### Libraries
+* empath
+* country_converter
+* wikidata2df
+* plotly
+* lxml
+* pytrends
+* wordcloud
+* spacy
+
+## Step 1: Data collection
+
+* Movie metadata dataset: the movie metadata dataset has been augmented with wikidata information such has the review score and the main genre. The dataset contains 45 000 movies from 1888 to 2012. The dataset has been filtered to keep only the US movies.
+* Character metadata dataset: the character metadata dataset contains 450 669 characters from 1888 to 2012. It has been augmented/corrected with data from wikidata such as the ethnicity and the gender of the actor which plays the character. The dataset has been filtered to keep only characters from US movies.
+
+## Step 2: Data exploration
+
+* Movie metadata dataset: the movie metadata dataset has been explored to see the evolution of the number of movies produced in the US cinema industry with their respective genre.
+* Character metadata dataset: the character metadata dataset has been explored to see the evolution of the number of characters and their in the US cinema industry.
+
+## Step 3: Data Analysis
+
+* Movie summary dataset: the movie summaries has been analyzed with spacy. It allows to establish the list of character and determine th eimportance of their role in a particular movie. Their gender andthe verbs and adjectives used to describe them are also extracted.
+
+## Step 4: Investigation of the results
+
+* The results from the analysis are post-processed and filter to extract the most relevant information such as the lexical field associated with male and female through the years.
+
+## Step 5: Data visualization
+
+* Once meaningful results have been extracted, they are visualized with plotly to allow the reader to interact with the data.
+
+## Step 6: Correlation analysis between the review score of the public and the gender of the main character
+
+* The last study conducted consists of determined if there is a correlatio between the appreciation of a movie from the public and the gender of the main actor. To do so, data that were previously extracted is used. The correlation is computed upon different time periods and movie genres.
+
+## Step 7: Creation of the data story and build of the website
+
+
+
+
+
+
+
+# Organization within the team
+
+* Antoine : correlation research, interactive data vizualisation
+* Benoit : NLP analysis, 
+* Nathan : Statiscal analysis, 
+* Romain : Datastory, and website
+
+
 <!---
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
