@@ -1,4 +1,136 @@
+
+
+
 # Hollywood: a reflection of a patriarchal society ?
+___Examining the gender bias in Hollywood movies___
+
+## Data Story :book:
+
+🌍 [badasteam.github.io/Women-Hollywood](https://badasteam.github.io/US_Cinema/Datastory)
+
+## Abstract :memo:
+<!---
+A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?)
+--->
+The term “male gaze,” introduced by filmmaker Laura Mulvey in 1975, refers to the way in which the visual arts, particularly film, depict the world and women from a masculine point of view. This perspective is often characterized by an objectifying and sexualizing portrayal of women, which reinforces traditional gender roles and reinforces the dominant power dynamics between men and women. Mulvey’s concept of the male gaze has been influential in feminist film theory and has sparked important discussions about the representation of women in the film industry and broader visual culture.
+
+The study of the representation of women in film is an important area of inquiry because of the significant role that the film industry plays in shaping cultural norms and values. By examining how women have been portrayed in film over the past century, we can better understand the changing attitudes towards gender and representation in society. This can be done by looking at both the perspective of the director, who plays a key role in shaping the representation of women on screen, as well as the perspective of the audience, who consume and are influenced by these representations. Through this analysis, it is possible to better understand the ways in which the film industry has influenced and been influenced by societal attitudes towards women, and to consider the potential for positive change in the representation of women in film and visual culture.
+
+
+## Research Question :grey_question:
+<!---
+A list of research questions you would like to address during the project.
+--->
+<i><strong>How has the consideration of both directors' and audiences' perspectives impacted the evolution of gender bias in the portrayal characters in film? </strong></i>
+
+
+
+## Additional Datasets :fax:
+<!---
+List the additional dataset(s) you want to use (if any), and some ideas on how you expect to get, manage, process, and enrich it/them.
+Show us that you’ve read the docs and some examples, and that you have a clear idea on what to expect. Discuss data size and format if relevant.
+It is your responsibility to check that what you propose is feasible.
+--->
+### Wikidata
+
+* **Freebase_ID <=> Q-wikidata ID**: USmovies and movies with a freebase_ID were extracted with a SPARQL query. This allows us to obtain a table with a row containing the freebase_ID and the other row with the corresponding Q-ID.
+
+* **Review score**: Review score of a film may been an interesting indicator for data analysis. For this, we search for the US movies that has a freebase_ID and a review score. Then, we also query the website from which the score was coming and the type of review. We chose to keep two differents review score both from [Rotten Tomatoes](https://www.rottentomatoes.com): the tomatometer score and the average review score. The first one is based on press reviews whereas the second is based on the website users.
+
+
+## Methods :mag:
+
+For the current stage of the project, we decided to analyze data from 1910 to 2010. 
+### Pincipals Externals libraries
+* empath
+* country_converter
+* wikidata2df
+* plotly
+* lxml
+* wordcloud
+* statsmodel
+* sklearn
+* tqdm
+
+### Pipeline
+The <i>CMU Movie Summary Corpus</i> offers three datasets for examining the development of gender bias in film character portrayal. The first dataset includes information on a total of <i>81741 movies</i> ranging from <i>1888 to 2012</i>, and we have enhanced this dataset by adding review scores to gain insight into the public's interest in each film. The second dataset provides information on the characters that appear in these films, while the final dataset includes <i>summaries of 20358 movies</i> from the first dataset, providing more detailed information on the gender and portrayal of characters.
+Through our analysis of these data, we aim to gain a deeper understanding of the portrayal of gender bias in film over time and the representation of male and female characters. The process of our analysis is illustrated in the diagram below:
+
+
+<!---
+Pipeline schema
+--->
+<p align="center"> 
+  <img src="./03_Outputs/img/diag_pipeline.png" alt="schema" width="600"/>
+</p>
+
+### Step 1: Data collection
+
+* Movie metadata dataset: the movie metadata dataset has been augmented with wikidata information such has the review score and the main genre. The dataset contains 45 000 movies from 1888 to 2012. The dataset has been filtered to keep only the US movies.
+* Character metadata dataset: the character metadata dataset contains 450 669 characters from 1888 to 2012. It has been augmented/corrected with data from wikidata such as the ethnicity and the gender of the actor which plays the character. The dataset has been filtered to keep only characters from US movies.
+
+### Step 2: Data exploration
+
+* Movie metadata dataset: the movie metadata dataset has been explored to see the evolution of the number of movies produced in the US cinema industry with their respective genre.
+* Character metadata dataset: the character metadata dataset has been explored to see the evolution of the number of male and female characters in the US cinema industry.
+
+### Step 3: Data Analysis
+
+* Movie summary dataset: the movie summaries has been analyzed with spacy. It allows to establish the list of character and determine the importance of their role in a particular movie. Their gender and the verbs, adjectives and attributes used to describe them are also extracted.
+
+### Step 4: Investigation of the results
+
+* The results from the analysis are post-processed and filter to extract the most relevant information such as the lexical field associated with male and female through the years.
+
+### Step 5: Machine learning algorithms
+
+* The results of the investigation were analyzed using machine learning models. A Random Forest was used to evaluate the predictive power of adjectives and verbs in determining gender, and to identify the most important features for gender classification. Then, a Principal Component Analysis was conducted to examine the evolution of the distance between adjectives and verbs associated with male and female characters
+
+### Step 6: Correlation analysis between the review score of the public and the gender of the main character
+
+* The last study conducted consists of determined if there is a correlation between the appreciation of a movie from the public and the gender of the main actor. To do so, data that were previously extracted is used. The correlation is computed upon different time periods and movie genres.
+
+### Step 7: Data visualization
+
+* Once meaningful results have been extracted, they are visualized with plotly to allow the reader to interact with the data.
+
+### Step 8: Creation of the data story and build of the website
+
+* 
+                                                    
+
+
+## Timeline :clock10:
+* 01.10.22 **Start of the project**
+* 14.10.22 **Milestone 1 deadline**
+* 18.11.22 **Milestone 2 deadline**
+* 23.12.22 **Milestone 3 deadline**
+* 24.12.22 **End the project**
+
+
+## Team Organization :raised_hands:
+* Antoine : correlation research, interactive data vizualisation
+* Benoit : NLP analysis, 
+* Nathan : Statiscal analysis, datastory 
+* Romain : Datastory, and website
+
+
+
+
+
+
+
+
+
+
+
+<!---
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+README_2
+# Hollywood: a reflection of a patriarchal society ?
+
 
 ___Examining the role of Women in Hollywood and how it reflects our society ?___
 
@@ -71,12 +203,10 @@ To access our insane website please clic [here](https://badasteam.github.io/US_C
 
 
 
-<!---
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
-ANCIEN README
+README_1
 
 
 
