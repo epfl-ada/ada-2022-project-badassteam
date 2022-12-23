@@ -10,6 +10,9 @@ The study of the representation of women in film is an important area of inquiry
 ## Research questions
 * <i><strong>How has the consideration of both directors' and audiences' perspectives impacted the evolution of gender bias in the portrayal characters in film? </strong></i>
 
+## Website
+To access the website please clic [here](https://badasteam.github.io/US_Cinema/Datastory)!
+
 ## Methods
 
 ### Pincipals Externals libraries
@@ -24,92 +27,32 @@ The study of the representation of women in film is an important area of inquiry
 * tqdm
 
 ### Data handling
+First step in the analysis is to set the scoop of the dataset on USA movies. Remove all other countries from character, movie and summaries dataset. In addition, we analyze character gender by country to confirm the previous point. To continue the preliminary processing, we make an analysis to complete our dataset for missing value in gender and ethnicity. Moreover, for a futher study on public sentiment, we gather review scores from Wikidata. And finally, we perform an NLP program on summaries to extract mains characters as well as adjectives and verbs that describes them.
 
-### Summaries analysis
+### Preliminary analysis
+From the data handling we wanted to go deeper on the male/female analysis. So we look at the weighting of male/female character per decade and then per genre. 
 
-### Lexical analysis 
+![](./plot/world_map.html)
+
+### Summaries analysis 
 
 ### Review analysis
 
 ## bADAssteam members contribution
-* Antoine : correlation research, complete final data visualisation
-* Benoit : Statistical analysis, complete trends and website
-* Nathan : Push on lexical analysis combine with trends
+* Antoine : Correlation research, complete final data visualisation
+* Benoit : Summaries exploration: ML algorithm and NLP
+* Nathan : Summaries analysis: Random forest and PCA
 * Romain : Datastory, interactive data visualization and website
 
 
+<!---
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
+ANCIEN README
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<---
-----------------------------------------------------------------------------------
-Ancien read me
 
 ___Study of the evolution of the representation of women in the american cinema industry from 1888 to 2012___
 
