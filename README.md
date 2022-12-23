@@ -32,7 +32,8 @@ First step in the analysis is to set the scoop of the dataset on USA movies. Rem
 ### Preliminary analysis
 From the data handling we wanted to go deeper on the male/female analysis. So we look at the weighting of male/female character per decade and then per genre. 
 
-![](./plot/world_map.html)
+![](./plot/world_map.html)<!--- Weighting decade and genre--->
+
 
 ### Summaries analysis 
 
