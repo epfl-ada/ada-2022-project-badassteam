@@ -105,7 +105,7 @@ Pipeline schema
 * 14.10.22 **Milestone 1 deadline**
 * 18.11.22 **Milestone 2 deadline**
 * 23.12.22 **Milestone 3 deadline**
-* 24.12.22 **End the project**
+* 24.12.22 **End of the project**
 
 
 ## Team Organization :raised_hands:
